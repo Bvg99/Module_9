@@ -12,11 +12,11 @@ class EvenNumbers:
         if self.i == 0:
             print(self.start)
         self.i += 1
-        if self.start >= (self.end - 1):
-            raise StopIteration
         if self.start % 2 != 0:
             self.start = self.start + 1
         self.start = self.start + 2
+        if self.start > self.end:
+            raise StopIteration
         return self.start
 
 
