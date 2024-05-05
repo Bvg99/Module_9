@@ -5,7 +5,6 @@ class EvenNumbers:
         self.i = 0
 
     def __iter__(self):
-        self.i = 0
         return self
 
     def __next__(self):
